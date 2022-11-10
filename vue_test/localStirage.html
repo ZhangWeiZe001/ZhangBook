@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>localStirage</title>
+</head>
+<body>
+    <button onclick="saveData()">点我保存数据</button>
+    <button>点我查询数据</button>
+    <button>点我删除数据</button>
+    <script>
+       function saveData(){
+         //添加
+         localStorage.setItem('mag','hello!');
+         //查找
+         localStorage.getItem('mag');
+         //指定删除
+         localStorage.removeItem('mag');
+         //清空
+         localStorage.clear()
+       }
+    </script>
+</body>
+</html>
